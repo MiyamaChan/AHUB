@@ -1,0 +1,177 @@
+.carousel-hashtags {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 4rem;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.carousel-hashtags__slide {
+  font-size: 17px;
+  text-align: center;
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-500);
+  margin-right: 10px;
+}
+
+.carousel__prev-gradient,
+.carousel__next-gradient {
+  top: -10%;
+  color: var(--grey-500);
+  height: 100%;
+  width: 4rem;
+  padding: 10px;
+}
+
+.carousel__prev-gradient {
+  background: linear-gradient(to right, var(--grey-50) 70%, transparent);
+}
+
+.carousel__next-gradient {
+  background: linear-gradient(to left, var(--grey-50) 70%, transparent);
+}
+
+.carousel-delicious {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-delicious__slide {
+  font-size: 17px;
+  text-align: center;
+  background: transparent;
+  border-radius: 5px;
+  background-color: var(--white);
+  margin-right: 10px;
+}
+
+.delicious__card {
+  width: 150px;
+  height: 200px;
+  border: 10px;
+}
+
+.card__img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card__text {
+  margin-top: 10%;
+}
+
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  border: none;
+  color: var(--grey-500);
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--grey-50);
+}
+
+.carousel__prev {
+  display: none;
+  left: 0;
+}
+
+.carousel__next {
+  right: 0;
+}
+
+.carousel__prev-circle,
+.carousel__next-circle {
+  border-radius: 100%;
+  height: 3.5rem;
+  width: 3.5rem;
+  top: 30%;
+}
+
+.carousel__next-circle {
+  right: -25px;
+}
+
+.carousel__prev-circle {
+  left: -25px;
+}
+
+.carousel-market {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.market__card {
+  width: 300px;
+  height: 320px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.market-img {
+  object-fit: contain;
+  width: 310px;
+}
+
+.card__location,
+.card__measure {
+  color: var(--grey-500);
+}
+
+.card__description {
+  align-content: center;
+  height: 20%;
+}
+
+.card__cost {
+  display: flex;
+}
+
+.card__description,
+.card__cost {
+  font-weight: 600;
+}
+
+.near::after,
+.sale::before,
+.qr::before {
+  color: var(--white);
+  align-content: center;
+  text-align: center;
+  font-family: "SF-Pro-Display";
+  position: absolute;
+  top: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.near::after {
+  content: "Рядом";
+  right: 10px;
+  background-color: var(--orange);
+}
+
+.sale::before {
+  content: "SALE";
+  left: 10px;
+  background-color: var(--green);
+}
+
+.qr::before {
+  content: "QR";
+  left: 10px;
+  background-color: var(--grey-900);
+}
