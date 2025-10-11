@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     menuDrop.classList.toggle("menu__drop-open");
     menu.classList.toggle("menu-open");
     menuIcon.classList.replace("fa-bars", "fa-xmark")
-      ? true
-      : menuIcon.classList.replace("fa-xmark", "fa-bars");
+      ? (menuIcon.src = "/assets/img/xmark.svg")
+      : menuIcon.classList.replace("fa-xmark", "fa-bars")
+      ? (menuIcon.src = "/assets/img/menu.svg")
+      : "";
   });
 
   const create = document.querySelector(".create");
