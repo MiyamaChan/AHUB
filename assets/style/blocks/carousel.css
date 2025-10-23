@@ -3,6 +3,7 @@
   overflow: hidden;
   width: 100%;
   height: 4rem;
+  display: flex;
 }
 
 .carousel__track {
@@ -30,18 +31,11 @@
   padding: 10px;
 }
 
-.carousel__prev-gradient {
-  background: linear-gradient(to right, var(--grey-50) 70%, transparent);
-}
-
-.carousel__next-gradient {
-  background: linear-gradient(to left, var(--grey-50) 70%, transparent);
-}
-
 .carousel-delicious {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 97%;
+  padding: 10px;
 }
 
 .carousel-delicious__slide {
@@ -57,6 +51,7 @@
   width: 150px;
   height: 200px;
   border: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.192);
 }
 .card__img {
   width: 100%;
@@ -76,7 +71,7 @@
   color: var(--grey-500);
   font-size: 30px;
   cursor: pointer;
-  background-color: var(--grey-50);
+  background-color: var(--grey);
 }
 
 .carousel__prev {
@@ -111,28 +106,41 @@
 }
 
 .market__card {
-  width: 300px;
-  height: 320px;
+  width: 370px;
+  height: 350px;
   background-color: var(--white);
   border-radius: 10px;
   padding: 10px;
   margin-right: 10px;
   position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.192);
+  margin: 10px;
 }
 
 .market-img {
   object-fit: contain;
   width: 310px;
 }
+.market__title,
+.wrapper-title {
+  font-size: larger;
+}
 
 .card__location,
 .card__measure {
-  color: var(--grey-500);
+  color: var(--grey-900);
+  display: flex;
+}
+.card__location .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .card__description {
   align-content: center;
-  height: 20%;
+  height: 17%;
 }
 
 .card__cost {
@@ -151,6 +159,7 @@
   align-content: center;
   text-align: center;
   font-family: "SF-Pro-Display";
+  font-size: x-small;
   position: absolute;
   top: 10px;
   width: 3rem;
@@ -159,7 +168,7 @@
 }
 
 .near::after {
-  content: "Рядом";
+  content: "РЯДОМ";
   right: 10px;
   background-color: var(--orange);
 }
@@ -174,4 +183,13 @@
   content: "QR";
   left: 10px;
   background-color: var(--grey-900);
+}
+
+.carousel__prev-gradient {
+  background-color: transparent;
+  background: linear-gradient(to right, var(--grey) 70%, transparent);
+}
+
+.carousel__next-gradient {
+  background: linear-gradient(to left, var(--grey) 70%, transparent);
 }

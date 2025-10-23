@@ -20,9 +20,15 @@
   color: var(--white);
   border-radius: 10px;
   align-content: end;
-  box-shadow: inset 0px 0px 100px 1px var(--black);
+  box-shadow: inset 0px -100px 100px 1px rgba(1, 1, 1, 0.87);
 }
 
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 .card-content {
   display: grid;
   min-height: 150px;
