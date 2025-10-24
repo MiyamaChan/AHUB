@@ -123,3 +123,22 @@
 .rotated {
   transform: rotateY(180deg);
 }
+
+@media (max-width: 800px) {
+  .input-two-element {
+    width: 43%;
+  }
+  .wrapper-input-popup {
+    width: 95%;
+    align-content: center;
+  }
+  .social-popup {
+    width: 90%;
+  }
+  .popup__footer {
+    width: 82%;
+  }
+  .footer__content {
+    width: 100%;
+  }
+}
